@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+
+.back-next{
+    display: flex;
+    gap: 10px;
+    background-color: #F5F5F5;
+    padding: 20px 90px;
+    margin-bottom: 30px;
+}
+
+.back-next .home{
+    color: #000;
+    text-decoration: none;
+}
+
+.article{
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    margin: 0 90px;
+}
+
+.product-filter .product-filter-items{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-filter .product-filter-items a{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.home-colletion .title-colletion .title-colletion-shoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 30px;
+    padding-right: 60px;
+    margin-bottom: 20px;
+}
+
+.home-colletion .title-colletion .title-colletion-filter{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 60px;
+}
+
+.home-colletion .title-colletion .title-colletion-filter #opt{
+    padding: 10px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+.home-colletion .title-colletion .title-colletion-filter #opt option{
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+.list-items .items{
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  border: 1px solid #33333324;
+}
+
+.list-items .items .info{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px;
+}
+
+.list-items .items .info .prg{
+  font-size: 16px;
+  font-weight: 450;
+}
+
+.list-items .items .info .date-view{
+  color: #979797;
+  font-size: 14px;
+}
+
+.list-items .items .info .detail{
+  padding: 8px;
+  max-width: 40%;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3B92CF;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.list-items .items .info .title{
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.list-items .items .info .date-view{
+  display: flex;
+  justify-content: space-between;
+}
+
+.smartmen .title-colletion-shoes a{
+  color: #000;
+  text-decoration: none;
+}
+
+.smartmen .list-items{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 25px;
+}
+
+.home-colletion .smartmen{
+  margin-bottom: 80px;
+}
+
+.items {
+  overflow: hidden;
+  position: relative;
+}
+
+.items img {
+  width: 100%;
+  /* height: auto; */
+  transition: transform 0.3s ease;
+}
+
+.items:hover img {
+  transform: scale(1.1);
+}
+
+  

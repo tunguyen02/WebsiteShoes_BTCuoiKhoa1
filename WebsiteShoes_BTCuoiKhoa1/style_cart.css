@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    cursor: pointer;
+}
+
+th{
+    text-align: left;
+}
+
+td{
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: fit-content;
+}
+
+tr{
+    border-bottom: 1px  solid #77777741;
+}
+
+.bold-20px{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.breadcrumbs{
+    font-size: 18px;
+    padding: 15px 88px 15px 88px;
+    background-color: #77777741;
+}
+
+.breadcrumbs .divider{
+    margin-left: 5px;
+    margin-right: 5px;
+    opacity: 50%;
+}
+
+.breadcrumbs .last{
+    font-size: 16px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.main .content{
+    display: flex;
+    width: 87vw;
+    justify-content: space-between;
+}
+
+.main .content .product-list{
+    min-width: 60vw;
+    padding-right: 25px;
+    border-right: 1px solid #D5D5D5;
+}
+
+table, th, td {
+    border-collapse: collapse;
+}
+
+.product-list table .product-img{
+    width: fit-content;
+}
+.product-list table .product-img img{
+    width: 7vw;
+}
+
+.product-list table thead{
+    height: 50px;
+}
+
+.product-list table th{
+    color: #444444;
+    border-bottom: 2px solid #a7a2a264;
+}
+
+.product-list table .product-remove button{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    text-align: center;
+    color: #6666666c;
+    border: 2px solid #6666666c;
+    background-color: transparent;
+    font-size: 1vw;
+}
+
+.product-list table .product-remove button:hover{
+    color: black;
+    border: 2px solid black;
+}
+
+.product-subtotal{
+    text-align: right;
+}
+
+.product-id,.product-price,.product-subtotal{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-id a{
+    color: #2F75A6;
+}
+
+.product-id a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+td.product-price{
+    color: red;
+}
+
+.adjust-qty{
+    display: flex;
+    border: 1px solid #D5D5D5;
+    width: fit-content;
+}
+
+.adjust-qty button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.adjust-qty .decrease-button{
+    border-right: 1px solid #D5D5D5;
+}
+
+.adjust-qty .increase-button{
+    border-left: 1px solid #D5D5D5;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.adjust-qty input[type=number]{
+    width: 70px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 16px;
+}
+
+.product-subtotal{
+    color: red;
+}
+
+.func-btn{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.func-btn button{
+    height: 40px;
+    border-radius: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.func-btn .view-product{
+    border: 1px solid black;
+}
+
+.func-btn .update-cart{
+    color: white;
+    background-color: #2e74a6b6 !important;
+}
+
+.func-btn .view-product:hover,.update-cart:hover{
+    color: white;
+    background-color: #2E75A6 !important;
+    border: none !important;
+}
+
+.cart-sidebar{
+    width: 100%;
+    margin-left: 40px;
+    padding-top: 10px;
+}
+
+.cart-sidebar .cart-total .description{
+    height: 40px;
+    text-align: left;
+    border-bottom: 2px solid #a7a2a264;
+    color: #444444;
+}
+
+.cart-total .info .final-total{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-total .info .final-total div{
+    font-size: 24px;
+}
+
+.cart-total .info .final-total .final-des{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cart-total .info .final-total .final-price{
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.pay{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.pay #pay-button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: #2e74a6b6;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.pay #pay-button:hover{
+    background-color: #2E75A6;
+}

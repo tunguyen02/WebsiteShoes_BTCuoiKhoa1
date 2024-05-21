@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.article .newspaper-items{
+    padding-left: 22px;
+}
+
+.newspaper-items{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.newspaper-items .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.newspaper-items .info .title{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.newspaper-items .info .detail-short{
+    font-size: 16px;
+    font-weight: 500;
+    color: #595d59;
+
+}
+
+.newspaper-items .info .detail{
+    max-width: 20%;
+    padding: 5px;
+    text-align: start;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #595d59;
+    cursor: pointer;
+}
+
+.newspaper-items {
+    position: relative;
+    overflow: hidden;
+}
+
+.newspaper-items img {
+    transition: transform 0.3s ease;
+}
+
+.newspaper-items:hover img {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+}

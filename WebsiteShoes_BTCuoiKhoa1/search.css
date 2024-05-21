@@ -1,0 +1,96 @@
+.show-modal {
+	cursor: pointer;
+}
+
+.close-modal {
+	color: #333;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+
+.hidden {
+	display: none;
+}
+
+.modal {
+	position: absolute;
+	/* top: 50%;
+	left: 50%; */
+	/* transform: translate(-50%, -50%); */
+	width: 100%;
+
+	background-color:transparent;
+	/* padding: 6rem; */
+	/* border-radius: 5px; */
+	/* box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); */
+	z-index: 10;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(3px);
+	z-index: 5;
+}
+
+.search-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+    z-index: 999; /* Đảm bảo ô tìm kiếm và danh sách kết quả hiển thị trên mọi phần khác */
+}
+
+#searchInput {
+    width: calc(100% - 36px); /* Trừ đi kích thước của biểu tượng tìm kiếm */
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#searchList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#searchList li {
+    padding: 12px;
+    cursor: pointer;
+}
+
+#searchList li:hover {
+    background-color: #f4f4f4;
+}
+
+.no-scroll {
+    overflow: hidden;
+}

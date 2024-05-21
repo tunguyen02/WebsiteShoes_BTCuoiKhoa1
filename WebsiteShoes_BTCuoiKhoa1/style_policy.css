@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    cursor: pointer;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.breadcrumbs{
+    font-size: 18px;
+    padding: 15px 88px 15px 88px;
+    background-color: #77777741;
+}
+
+.breadcrumbs .divider{
+    margin-left: 5px;
+    margin-right: 5px;
+    opacity: 50%;
+}
+
+.breadcrumbs .last{
+    font-size: 16px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.main .content{
+    display: flex;
+    width: 86vw;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+.content .menu{
+    width: 25vw;
+    gap: 40px;
+}
+
+.content .menu .title{
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.content .menu .category{
+    gap: 15px;
+}
+
+.content .menu .category .type a:hover{
+    color: #66A7DA;
+}
+
+.content .policy-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vw;
+}
+
+.card{
+    width: 18vw;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 1px #DEDEDE;
+}
+
+.card .img{
+    overflow: hidden;
+    overflow: hidden;
+}
+.card .img img{
+    width: 100%;
+    transition: 1s ease;
+}
+
+.card .img img:hover{
+    scale: 1.1;
+}
+
+.card .info{
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.card .info>div{
+    width: 82%;
+}
+
+.card .info .name{
+    font-size: 17px;
+    font-weight: bold;
+    height: 45px;
+}
+
+.card .detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card .detail .figure{
+    display: flex;
+    gap: 15px;
+}
+.card .detail .figure .date,.view{
+    color: #757575;
+}
+
+.card .detail .description{
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 2; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    color: #111111;
+}
+
+.card button{
+    font-weight: bold;
+    color: white;
+    padding: 10px 15px;
+    background-color: #3B92CF;
+    border: none;
+    border-radius: 0;
+}
+
+.card button:hover{
+    background-color: #0064ab;
+}
